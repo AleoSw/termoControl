@@ -1,0 +1,85 @@
+<main class="mainSettings">
+    {{> navigation}}
+    <section class="appBody">
+        <section class="settings">
+                <article class="welcome p-3">                    
+                    <h1 class="title">Panel del control</h1>
+                    <div class="position-relative" style="z-index: 2;">
+                        <a
+                            href="/settings/user/add"
+                            class="btn btn-primary p-1"
+                        >Gestion de usuarios</a>
+                        <a
+                            href="/settings/rol/add"
+                            class="btn btn-primary p-1"
+                        >Rol de usuario</a>
+                        <a
+                            href="/settings/color/add"
+                            class="btn btn-primary p-1"
+                        >Color</a>
+                    </div>
+                    <img src="/images/logosena.svg" alt="Logo Sena CDTI" class="imgWelcome">
+                </article>
+
+                <article class="users p-3">
+                    <h3 class="title">Usuarios registrados recientemente</h3>
+                    <ul class="d-flex flex-column">
+                    <li class="itemUser">
+                        <span class="d-flex align-items-center gap-1">
+                        <i class="ri-user-3-line"></i>
+                        <h3 class="subtitle">Andres Tafur</h3>
+                        </span>
+
+                        <span class="rol">Jefe de planta</span>
+                        <span class="dateUser">19/06/2023</span>
+                    </li>
+                    <li class="itemUser">
+                        <span class="d-flex align-items-center gap-1">
+                        <i class="ri-user-3-line"></i>
+                        <h3 class="subtitle">Stefanny Alomia</h3>
+                        </span>
+
+                        <span class="rol">Operario</span>
+                        <span class="dateUser">18/06/2023</span>
+                    </li>
+                    <li class="itemUser">
+                        <span class="d-flex align-items-center gap-1">
+                        <i class="ri-user-3-line"></i>
+                        <h3 class="subtitle">Miguel Gonzalez</h3>
+                        </span>
+
+                        <span class="rol">Operario</span>
+                        <span class="dateUser">16/06/2023</span>
+                    </li>
+                    <li class="itemUser">
+                        <span class="d-flex align-items-center gap-1">
+                        <i class="ri-user-3-line"></i>
+                        <h3 class="subtitle">Alejandro Escobar</h3>
+                        </span>
+
+                        <span class="rol">Administrador</span>
+                        <span class="dateUser">19/06/2023</span>
+                    </li>
+                    </ul>
+                </article>
+                <article class="roles p-3">
+                    <h3 class="title">Roles de usuario</h3>
+                    <ol>
+                        <li class="subtitle">Administrador</li>
+                        <li class="subtitle">Jefe de planta</li>
+                        <li class="subtitle">Operario</li>
+                    </ol>
+                </article>
+                <article class="colors p-3">
+                    <h3 class="title">Colores registrados</h3>
+                    <ol>
+                        <li class="subtitle">Negro</li>
+                        <li class="subtitle">Rojo</li>
+                        <li class="subtitle">Gris</li>
+                    </ol>
+                </article>
+
+        </section>
+        {{> footer}}
+    </section>
+</main>

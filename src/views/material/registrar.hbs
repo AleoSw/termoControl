@@ -1,0 +1,37 @@
+<main class="mainProduction">
+    {{> navigation}}
+    <section class="appBody">
+        <section class="production">
+            <article class="welcome p-3">              
+                    <h3 class="subtitle">Registrar</h3>      
+                    <h1 class="title">Material</h1>
+                    <img src="/images/logosena.svg" alt="Logo Sena CDTI" class="imgWelcome">
+            </article>
+
+            <form action="/material" style="grid-area: f;">
+                <div class="d-flex flex-column gap-2">
+                    <label for="codigo-materia" class="subtitle">Código de Materia Prima:</label>
+                    <input type="text" id="codigo-materia" name="codigo-materia" required>
+
+                    <label for="codigo-tipo" class="subtitle">Código de Tipo de Material:</label>
+                    <input type="text" id="codigo-tipo" name="codigo-tipo" required>
+
+                    <label for="codigo-color" class="subtitle">Código de Color:</label>
+                    <input type="text" id="codigo-color" name="codigo-color" required>
+
+                    <label for="cantidad" class="subtitle">Cantidad:</label>
+                    <input type="text" id="cantidad" name="cantidad" required>
+
+                    <label for="descripcion" class="subtitle">Descripción:</label>
+                    <input type="text" id="descripcion" name="descripcion" required>
+
+                    <label for="codigo-estado" class="subtitle">Código de Tipo de Estado:</label>
+                    <input type="text" id="codigo-estado" name="codigo-estado" required>
+
+                    <button class="btn btn-primary">Registrar</button>
+                </div>
+            </form>    
+        </section>    
+        {{> footer}}
+    </section>
+</main>

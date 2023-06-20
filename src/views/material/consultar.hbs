@@ -1,0 +1,37 @@
+<main class="mainProduction">
+    {{> navigation}}
+    <section class="appBody">
+        <section class="production">
+            <article class="welcome p-3">              
+                    <h3 class="subtitle">Modificar</h3>      
+                    <h1 class="title">Material</h1>
+                    <img src="/images/logosena.svg" alt="Logo Sena CDTI" class="imgWelcome">
+            </article>
+
+            <form action="/material" style="grid-area: f;" class="d-flex flex-column gap-2" id="formConsultar">
+                <label for="codigo-materia" class="subtitle">Código de Materia Prima:</label>
+                <input type="text" id="codigo-materia" name="codigo-materia" required>
+
+                <button class="btn btn-primary mt-1">Consultar</button>
+            </form>
+
+             <div class="d-flex align-items-center justify-content-between" style="grid-area: b;">
+                    <a href="/material/register" class="btn btn-primary">
+                        Registrar
+                    </a>
+                    <a href="/material/search" class="btn btn-primary">
+                        Consultar
+                    </a>
+                    <a href="/material/modify" class="btn btn-primary">
+                        Modificar
+                    </a>
+                    <a href="/material/status" class="btn btn-primary">
+                        Inhabilitar/Habilitar
+                    </a>
+            </div>
+        </section>    
+        {{> footer}}
+    </section>
+</main>
+
+<script src="/js/consultar.js"></script>

@@ -1,0 +1,96 @@
+<main class="mainSettings">
+    {{> navigation}}
+        <section class="appBody">
+            <section class="crudUser">
+                <article class="welcome p-3">                    
+                    <h1 class="title">Registrar usuario</h1>
+                    <div class="position-relative" style="z-index: 2;">
+                        <a
+                            href="/settings/user/add" 
+                            class="btn btn-primary p-1"
+                        >Gestion de usuarios</a>
+                        <a
+                            href="/settings/rol/add" 
+                            class="btn btn-primary p-1"
+                        >Rol de usuario</a>
+                        <a
+                            href="/settings/color/add" 
+                            class="btn btn-primary p-1"
+                        >Color</a>
+                    </div>
+                    <img src="/images/logosena.svg" alt="Logo Sena CDTI" class="imgWelcome">
+                </article>
+                <form action="/settings" class="formUser">                              
+                    
+                    <span class="d-flex flex-column">
+                        <label for="TipoDeDocumento" class="title">Tipo de documento</label>
+                        <span class="d-flex align-items-center">
+                            <input type="radio" name="tipoDeDocumento" class="me-1">
+                            <h3 class="subtitle">Cedula de ciudadania</h3>
+                        </span>
+                        <span class="d-flex align-items-center">
+                            <input type="radio" name="tipoDeDocumento" class="me-1">
+                            <h3 class="subtitle">Cedula de extrangeria</h3>
+                        </span>
+                        <span class="d-flex align-items-center">
+                            <input type="radio" name="tipoDeDocumento" class="me-1">
+                            <h3 class="subtitle">Pasaporte</h3>
+                        </span>
+                    </span>
+                    
+                    
+                    <span class="d-flex flex-column">
+                        <label for="documento" class="title">Numero de identificacion</label>
+                        <input type="number" name="documento">
+                    </span>
+                    
+                    <span class="d-flex flex-column">
+                        <label for="rol" class="title">Rol</label>
+                        <select class="selectForm" name="rol">
+                            <option value="administrador">Administrador</option>
+                            <option value="jefeDePlanta">Jefe de planta</option>
+                            <option value="operario">Operario</option>
+                        </select>
+                    </span>
+
+                    <span class="d-flex flex-column">
+                        <label for="nombres" class="title">Nombre(s).</label>
+                        <input type="text" name="nombres">
+                    </span>
+
+                    <span class="d-flex flex-column">
+                        <label for="apellidos" class="title">Apellido(s)</label>
+                        <input type="text" name="apellidos">
+                    </span>
+
+                    <span class="d-flex flex-column">
+                        <label for="telefono" class="title">Teléfono</label>
+                        <input type="number" name="telefono">
+                    </span>
+
+                    <span class="d-flex flex-column">
+                        <label for="direccion" class="title">Dirección</label>
+                        <input type="text" name="direccion">
+                    </span>
+
+                    <span class="d-flex flex-column">
+                        <label for="correo" class="title">Correo</label>
+                        <input type="email" name="correo">
+                    </span>
+
+                    <span class="d-flex flex-column">
+                        <label for="contraseña" class="title">Contraseña</label>
+                        <input type="password" name="contraseña">
+                    </span>
+                    
+                    
+                    <button
+                        type="submit"
+                        class="btn btn-primary"    
+                    > Registrar </button>
+
+            </form>
+            </section>     
+            {{> footer}}       
+        </section>
+</main>

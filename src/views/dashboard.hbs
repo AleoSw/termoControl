@@ -1,0 +1,129 @@
+<main class="mainDashboard">
+{{> navigation}}
+  <section class="appBody">
+    <section class="dashboard">
+      <article class="welcome p-3">
+        <h3 class="subtitle">Bienvenido</span></h3>
+        <h1 class="title">TermoControl - SENA</h1>
+        <img src="/images/logosena.svg" alt="Logo Sena CDTI" class="imgWelcome">
+      </article>
+
+      <article class="progressItem">
+        <h3 class="title">Tiempo de la producción</h3>
+        <span class="dataNum">16 horas</span>
+      </article>
+      <article class="progressItem">
+        <h3 class="title">Tareas en progreso</h3>
+        <span class="dataNum">2</span>
+      </article>
+      <article class="progressItem">
+        <h3 class="title">Producciones en progreso</h3>
+        <span class="dataNum">8</span>
+      </article>
+
+      <article class="activities p-3">
+        <div class="d-flex align-items-center justify-content-between mb-3">
+            <h3 class="title mb-0">Actividades</h3>
+            <i class="ri-exchange-funds-line"></i>
+        </div>
+        <ul class="menuActivities">
+            <div class="itemActivity mb-2">
+                <h4 class="subtitle">25 termometros negros</h4>
+                <h4 class="subtitle">Terminado</h4>
+            </div>
+            <div class="itemActivity mb-2">
+                <h4 class="subtitle">10 termometros rojos</h4>
+                <h4 class="subtitle">En progreso</h4>
+            </div>
+            <div class="itemActivity">
+                <h4 class="subtitle">15 termometros metalico</h4>
+                <h4 class="subtitle">En espera</h4>
+            </div>
+        </ul>
+      </article>
+      <article class="progressTasks p-3">
+          <h3 class="title">Tareas</h3>
+          <div class="d-flex align-items-center gap-1">
+            <div class="containerBar">
+              <div class="percent">
+                <svg>
+                  <circle cx="50" cy="50" r="40"></circle>
+                  <circle cx="50" cy="50" r="40" style="--percent: 0.75" data-percent="0.75"></circle>
+                </svg>
+                <span class="percentNum">75%</span>
+              </div>
+            </div>
+            <div class="dataTasks d-flex flex-column">
+              <h3 class="subtitle">Restantes:</h3>
+              <span class="dataNum">25</span>
+              <h3 class="subtitle">Completadas:</h3>
+              <span class="dataNum">70</span>
+            </div>
+          </div> 
+      </article>
+      <article class="statusPLC p-3">
+        <h3 class="title">Estado de las maquinas</h3>
+        <ul class="listPLC">
+          <li class="itemPLC">
+            <h3 class="subtitle">MQ 1</h3>
+            <span class="state">En uso</span>
+          </li>
+          <li class="itemPLC">
+            <h3 class="subtitle">MQ 2</h3>
+            <span class="state">Mantenimiento</span>
+          </li>
+          <li class="itemPLC">
+            <h3 class="subtitle">MQ 3</h3>
+            <span class="state">Apagada</span>
+          </li>
+          <li class="itemPLC">
+            <h3 class="subtitle">MQ 4</h3>
+            <span class="state">Apagada</span>
+          </li>
+        </ul>
+      </article>
+      <article class="users p-3">
+        <h3 class="title">Usuarios que han realizado acciones</h3>
+        <ul class="d-flex flex-column">
+          <li class="itemUser">
+            <span class="d-flex align-items-center gap-1">
+              <i class="ri-user-3-line"></i>
+              <h3 class="subtitle">Alejandro Escobar</h3>
+            </span>
+
+            <span class="rol">Administrador</span>
+            <span class="dateUser">19/06/2023</span>
+          </li>
+          <li class="itemUser">
+            <span class="d-flex align-items-center gap-1">
+              <i class="ri-user-3-line"></i>
+              <h3 class="subtitle">Andres Tafur</h3>
+            </span>
+
+            <span class="rol">Jefe de planta</span>
+            <span class="dateUser">19/06/2023</span>
+          </li>
+          <li class="itemUser">
+            <span class="d-flex align-items-center gap-1">
+              <i class="ri-user-3-line"></i>
+              <h3 class="subtitle">Stefanny Alomia</h3>
+            </span>
+
+            <span class="rol">Operario</span>
+            <span class="dateUser">18/06/2023</span>
+          </li>
+          <li class="itemUser">
+            <span class="d-flex align-items-center gap-1">
+              <i class="ri-user-3-line"></i>
+              <h3 class="subtitle">Miguel Gonzalez</h3>
+            </span>
+
+            <span class="rol">Operario</span>
+            <span class="dateUser">16/06/2023</span>
+          </li>
+        </ul>
+      </article>
+    </section>
+    {{> footer}}
+  </section>
+</main>

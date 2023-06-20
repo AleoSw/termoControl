@@ -1,0 +1,62 @@
+<main class="mainProduction">
+    {{> navigation}}
+    <section class="appBody">
+        <section class="production">
+            <article class="welcome p-3">              
+                    <h1 class="title">Produccion</h1>
+                    <img src="/images/logosena.svg" alt="Logo Sena CDTI" class="imgWelcome">
+            </article>
+
+            <article class="panel p-3">
+                <h3 class="title mb-3">Ultimas acciones realizadas</h3>
+                <ul>
+                    <li class="item d-flex align-items-center justify-content-between">
+                        <h3 class="subtitle">PD009</h3>
+                        <h3 class="subtitle">Se habilito</h3>
+                        <span class="subtitle">19/06/2023</span>
+                    </li>
+                    <li class="item d-flex align-items-center justify-content-between">
+                        <h3 class="subtitle">PD005</h3>
+                        <h3 class="subtitle">Se modifico</h3>
+                        <span class="subtitle">19/06/2023</span>
+                    </li>
+                    <li class="item d-flex align-items-center justify-content-between">
+                        <h3 class="subtitle">PD004</h3>
+                        <h3 class="subtitle">Se modifico</h3>
+                        <span class="subtitle">19/06/2023</span>
+                    </li>
+                    <li class="item d-flex align-items-center justify-content-between">
+                        <h3 class="subtitle">PD002</h3>
+                        <h3 class="subtitle">Se registro</h3>
+                        <span class="subtitle">19/06/2023</span>
+                    </li>
+                    <li class="item d-flex align-items-center justify-content-between">
+                        <h3 class="subtitle">PD001</h3>
+                        <h3 class="subtitle">Se modifico</h3>
+                        <span class="subtitle">19/06/2023</span>
+                    </li>
+                    <li class="item d-flex align-items-center justify-content-between">
+                        <h3 class="subtitle">PD003</h3>
+                        <h3 class="subtitle">Se inhabilito</h3>
+                        <span class="subtitle">19/06/2023</span>
+                    </li>
+                </ul>
+            </article>
+            <div class="d-flex align-items-center justify-content-between" style="grid-area: b;">
+                    <a href="/production/register" class="btn btn-primary">
+                        Registrar
+                    </a>
+                    <a href="/production/search" class="btn btn-primary">
+                        Consultar
+                    </a>
+                    <a href="/production/modify" class="btn btn-primary">
+                        Modificar
+                    </a>
+                    <a href="/production/status" class="btn btn-primary">
+                        Inhabilitar/Habilitar
+                    </a>
+            </div>
+        </section>
+        {{> footer}}
+    </section>
+</main>

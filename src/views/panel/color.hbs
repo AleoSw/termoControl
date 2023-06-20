@@ -1,0 +1,36 @@
+<main class="mainSettings">
+    {{> navigation}}
+            <section class="appBody">
+                <section class="crudColor">
+                    <article class="welcome p-3">                    
+                    <h1 class="title">Registrar color</h1>
+                    <div class="position-relative" style="z-index: 2;">
+                        <a
+                            href="/settings/user/add" 
+                            class="btn btn-primary p-1"
+                        >Gestion de usuarios</a>
+                        <a
+                            href="/settings/rol/add" 
+                            class="btn btn-primary p-1"
+                        >Rol de usuario</a>
+                        <a
+                            href="/settings/color/add" 
+                            class="btn btn-primary p-1"
+                        >Color</a>
+                    </div>
+                    <img src="/images/logosena.svg" alt="Logo Sena CDTI" class="imgWelcome">
+                </article>
+            <article style="grid-area: f;">
+                <form action="/settings" class="d-flex flex-column gap-2">
+                    <label for="codigoDeColor" class="title">Código de color</label>
+                    <input type="number" name="codigoDeColor">
+                    <label for="nombre" class="title">Nombre</label>
+                    <input type="text" name="nombre">
+
+                    <button class="btn btn-primary">Registrar</button>
+                </form>
+            </article>
+                </section>
+            {{> footer}}
+        </section>
+</main>

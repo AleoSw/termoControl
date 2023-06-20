@@ -1,0 +1,42 @@
+<main class="auth pt-4">
+  <section class="content container">
+    <div class="mb-3 d-flex flex-column align-items-center">
+      <i class="ri-edit-circle-line logo"></i>
+      <h1 class="title">Iniciar sesión en <span>TermoControl</span></h1>
+    </div>
+    <form class="formAuth" action="/dashboard">
+      <div class="mb-3">
+        <label class="mb-2" for="inputUser">
+            <i class="ri-mail-line"></i>
+            <span>Usuario o correo electronico</span>
+        </label>
+        <input
+          class="inputAuth"
+          type="text"
+          id="inputUser"
+        />
+      </div>
+      <div class="mb-3">
+        <label class="mb-2" for="inputUser">
+            <i class="ri-lock-line"></i>
+            <span>Contraseña</span>
+        </label>
+        <input
+          class="inputAuth"
+          type="password"
+          id="inputUser"
+        />
+      </div>
+      <button class="btnAuth" type="submit">Iniciar sesión</button>
+    </form>
+
+    <section class="authOption mt-2 mb-2">
+      <h3 class="subtitle mb-0 me-1">¿No tienes cuenta?</h3>
+      <a href="/auth/signup" class="authLink">Crea una cuenta.</a>
+    </section>
+
+    <section class="copySena">
+      <h3 class="subtitle">©2023 - Servicio Nacional de Aprendizaje</h3>
+    </section>
+  </section>
+</main>

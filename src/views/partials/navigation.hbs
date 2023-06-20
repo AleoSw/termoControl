@@ -1,0 +1,96 @@
+<header class="header py-2">
+  <nav
+    class="container-fluid d-flex align-items-center justify-content-between"
+  >
+    <a href="/dashboard" class="navbar-brand d-flex align-items-center">
+      <i class="ri-edit-circle-line me-2"></i>
+      <span>TermoControl</span>
+    </a>
+    <div class="d-flex gap-1">
+      <a href="/settings">
+        <button type="button" class="btnControl" title="Ajustes">
+          <i class="ri-settings-3-line"></i>
+        </button></a>
+      <a href="/profile">
+        <button type="button" class="btnControl" title="Perfil">
+          <i class="ri-user-3-line"></i>
+        </button></a>
+    </div>
+  </nav>
+</header>
+<nav class="nav py-3">
+  <div class="d-flex align-items-center mb-3">
+    <button id="btnToggle" class="btnControl me-3">
+      <i class="ri-menu-fill"></i>
+    </button>
+    <span class="tagBtn">Menú</span>
+  </div>
+  <ul class="menu">
+      <a href="/dashboard" class="d-flex align-items-center py-2 navLink active">
+      <div class="iconNav me-3">
+        <i class="ri-home-line"></i>
+      </div>
+      <span class="tagLink">Inicio</span>
+    </a>
+    <div class="dp-off">
+          <a href="/production" class="d-flex align-items-center py-2 navLink">
+            <div class="iconNav me-3">
+              <i class="ri-exchange-funds-line"></i>
+            </div>
+            <span class="tagLink">Producción</span>
+          </a>
+      <div class="d-flex flex-column gap-2 py-2 dropdown">
+        <a href="/production/register" class="subtitle">Registrar</a>
+        <a href="/production/search" class="subtitle">Consultar</a>
+        <a href="/production/modify" class="subtitle">Modificar</a>
+        <a href="/production/status" class="subtitle">Inhabilitar/Habilitar</a>
+      </div>
+    </div>
+    <div class="dp-off">
+      <a href="/inventary" class="d-flex align-items-center py-2 navLink">
+      <div class="iconNav me-3">
+        <i class="ri-layout-masonry-line"></i>
+      </div>
+      <span class="tagLink">Invetario</span>
+    </a>
+      <div class="d-flex flex-column gap-2 py-2 dropdown">
+          <a href="/inventary/register" class="subtitle">Registrar</a>
+          <a href="/inventary/search" class="subtitle">Consultar</a>
+          <a href="/inventary/modify" class="subtitle">Modificar</a>
+          <a href="/inventary/status" class="subtitle">Inhabilitar/Habilitar</a>
+      </div>
+    </div>
+    
+    <div class="dp-off">
+        <a href="/material" class="d-flex align-items-center py-2 navLink">
+        <div class="iconNav me-3">
+          <i class="ri-bubble-chart-line"></i>
+        </div>
+        <span class="tagLink">Material</span>
+      </a>
+        <div class="d-flex flex-column gap-2 py-2 dropdown">
+          <a href="/material/register" class="subtitle">Registrar</a>
+          <a href="/material/search" class="subtitle">Consultar</a>
+          <a href="/material/modify" class="subtitle">Modificar</a>
+          <a href="/material/status" class="subtitle">Inhabilitar/Habilitar</a>
+      </div>
+    </div>
+    <div class="dp-off">
+      <a href="/reports" class="d-flex align-items-center py-2 navLink">
+      <div class="iconNav me-3">
+        <i class="ri-file-text-line"></i>
+      </div>
+      <span class="tagLink">Reportes</span>
+    </a>
+    <div class="d-flex flex-column gap-2 py-2 dropdown">
+          <a href="/reports/search" class="subtitle">Consultar</a>
+      </div>
+    </div>
+  </ul>
+  <a href="/auth/logout" class="d-flex align-items-center mt-3">
+    <button id="btnToggle" class="btnControl me-3">
+      <i class="ri-logout-box-line"></i>
+    </button>
+    <span class="tagBtn">Salir</span>
+  </a>
+</nav>

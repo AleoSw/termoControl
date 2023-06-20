@@ -1,0 +1,19 @@
+{
+  "name": "termocontrol",
+  "version": "1.0.0",
+  "description": "Monitoring software for thermometer production",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./src/index.js"
+  },
+  "author": "Miguel Gonzalez, Andres Tafur, Alejandro Escobar, Steffany Alomia",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-handlebars": "^7.0.7"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.22"
+  }
+}

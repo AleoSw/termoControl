@@ -1,0 +1,38 @@
+<main class="mainSettings">
+    {{> navigation}}
+        <section class="appBody">
+            <section class="crudRol">
+                <article class="welcome p-3">                    
+                    <h1 class="title">Registrar rol</h1>
+                    <div class="position-relative" style="z-index: 2;">
+                        <a
+                            href="/settings/user/add" 
+                            class="btn btn-primary p-1"
+                        >Gestion de usuarios</a>
+                        <a
+                            href="/settings/rol/add" 
+                            class="btn btn-primary p-1"
+                        >Rol de usuario</a>
+                        <a
+                            href="/settings/color/add" 
+                            class="btn btn-primary p-1"
+                        >Color</a>
+                    </div>
+                    <img src="/images/logosena.svg" alt="Logo Sena CDTI" class="imgWelcome">
+                </article>
+
+            <article style="grid-area: f;">
+                <form action="/settings" class="d-flex flex-column gap-2">
+                    <label for="codigoDeRol" class="title">Código de rol</label>
+                    <input type="number" name="codigoDeRol">
+
+                    <label for="descripcion" class="title">Descripción</label>
+                    <input type="text" name="descripcion">
+
+                    <button class="btn btn-primary">Registrar</button>
+                </form>
+            </article>
+            </section>
+        {{> footer}}    
+        </section>
+</main>

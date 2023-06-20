@@ -1,0 +1,41 @@
+<main class="mainProduction">
+    {{> navigation}}
+    <section class="appBody">
+        <section class="production">
+            <article class="welcome p-3">              
+                    <h3 class="subtitle">Inhabilitar/habilitar</h3>      
+                    <h1 class="title">inventario</h1>
+                    <img src="/images/logosena.svg" alt="Logo Sena CDTI" class="imgWelcome">
+            </article>
+
+            <form action="/inventary", style="grid-area: f;">
+                <div class="d-flex flex-column gap-2">
+                    <h3 class="title">Inhabilitar/Habilitar entrada de bodega</h3>
+                    <label for="" class="subtitle">Codigo de entrada de bodega.</label>
+                    <input type="number" name="Codigo de tipo de material.">
+
+                    <button class="btn btn-primary">Inhabilitar</button>
+                    <button class="btn btn-primary mb-5">Habilitar</button>
+                </div>
+                <div class="d-flex flex-column gap-2">
+                    <h3 class="title">Inhabilitar/Habilitar orden de pedido</h3>
+                    <label for="" class="subtitle">Codigo de orden de pedido</label>
+                    <input type="number" name="Codigo de tipo de material.">
+                    <input type="date" name="Fecha">
+
+                    <button class="btn btn-primary">Inhabilitar</button>
+                    <button class="btn btn-primary mb-5">Habilitar</button>
+                </div>
+                <div class="d-flex flex-column gap-2">
+                    <h3 class="title">Inhabilitar/Habilitar salida de bodega</h3>
+                    <label for="" class="subtitle">Codigo salida de bodega</label>
+                    <input type="number" name="Codigo de tipo de material.">
+
+                    <button class="btn btn-primary">Inhabilitar</button>
+                    <button class="btn btn-primary">Habilitar</button>
+                </div>
+            </form>    
+        </section>    
+        {{> footer}}
+    </section>
+</main>
