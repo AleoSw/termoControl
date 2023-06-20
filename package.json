@@ -4,7 +4,8 @@
   "description": "Monitoring software for thermometer production",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon ./src/index.js"
+    "dev": "nodemon ./src/index.js",
+    "start": "node src/index.js"
   },
   "author": "Miguel Gonzalez, Andres Tafur, Alejandro Escobar, Steffany Alomia",
   "license": "ISC",
