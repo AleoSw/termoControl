@@ -9,12 +9,21 @@
             </article>
 
             <form style="grid-area: f;" class="d-flex flex-column gap-2" id="formConsultar">
-                    <label for="" class="subtitle">Codigo orden de produccion</label>
-                    <input type="number" name="codigoOrdenP">
+                    <label for="" class="subtitle">Codigo de orden de produccion</label>
+                    <input type="text">
+
                     <label for="" class="subtitle">Codigo tipo material</label>
-                    <input type="number" name="codigoTipoM">
+                    <select name="" class="selectForm">
+                        <option value="">Plastico</option>
+                        <option value="">Metalico</option>
+                    </select>
+
                     <label for="" class="subtitle">Codigo materia prima</label>
-                    <input type="number" name="codgoMateriaP">
+                    <select name="" class="selectForm">
+                        <option value="">Base</option>
+                        <option value="">Manometro</option>
+                        <option value="">producto final</option>
+                    </select>
                 <button class="btn btn-primary mt-1">Consultar</button>
                     <div class="result d-none p-3">
                     </div>

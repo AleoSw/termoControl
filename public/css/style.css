@@ -254,7 +254,6 @@ button {
     display: grid;
     place-content: center;
     background-color: var(--bg-primary);
-    height: 100vh;
     min-height: -webkit-fill-available;
     min-height: 500px;
   }
@@ -284,7 +283,7 @@ button {
 
   .formAuth {
     width: 100%;
-    max-width: 350px;
+    max-width: 750px;
     height: auto;
     padding: 30px;
     background: var(--bg-deep);
@@ -938,6 +937,17 @@ button {
   }
 
   .mainSettings .selectForm {
+    width: 100%;
+    padding: 5px;
+    background-color: transparent;
+    border: 1px solid var(--border-primary);
+    border-radius: 5px;
+    font-size: 14px;
+    color: var(--text-low);
+    font-weight: 400;
+  }
+
+  .selectForm {
     width: 100%;
     padding: 5px;
     background-color: transparent;

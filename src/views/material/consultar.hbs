@@ -3,14 +3,18 @@
     <section class="appBody">
         <section class="production">
             <article class="welcome p-3">              
-                    <h3 class="subtitle">Modificar</h3>      
+                    <h3 class="subtitle">Consultar</h3>      
                     <h1 class="title">Material</h1>
                     <img src="/images/logosena.svg" alt="Logo Sena CDTI" class="imgWelcome">
             </article>
 
             <form action="/material" style="grid-area: f;" class="d-flex flex-column gap-2" id="formConsultar">
                 <label for="codigo-materia" class="subtitle">Código de Materia Prima:</label>
-                <input type="text" id="codigo-materia" name="codigo-materia" required>
+                <select class="selectForm">
+                        <option value="manometro">Manometro</option>
+                        <option value="base">Base</option>
+                        <option value="termómetro">Termómetro</option>
+                </select>
 
                 <button class="btn btn-primary mt-1">Consultar</button>
             </form>

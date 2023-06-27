@@ -8,6 +8,11 @@ router
     .get('/signup', (req, res) => {
         res.render('auth/signup')
     })
+    .post('/signup', async (req, res) => {
+        const {id, email, password} = req.body;
+        console.log(id, email, password)
+        res.redirect('/dashboard')
+    })
     .get('/logout', (req, res) => {
         res.redirect('/')
     })

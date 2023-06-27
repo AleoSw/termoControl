@@ -4,33 +4,27 @@
         <section class="production">
             <article class="welcome p-3">              
                     <h3 class="subtitle">Consultar</h3>      
-                    <h1 class="title">Inventario</h1>
+                    <h1 class="title">Entrada de bodega</h1>
                     <img src="/images/logosena.svg" alt="Logo Sena CDTI" class="imgWelcome">
             </article>
 
-            <form action="/inventary" style="grid-area: f;" class="d-flex flex-column gap-2">
+            <form action="/inventary/warehouse-entrance" style="grid-area: f;" class="d-flex flex-column gap-2">
                     <label for="" class="subtitle">Codigo entrada de bodega</label>
                     <input type="number" name="codigoOrdenP">
-                    <button class="btn btn-primary mt-1">Consultar</button>
-                    <label for="" class="subtitle">Codigo orden de pedido</label>
-                    <input type="number" name="codigoTipoM">
-                    <button class="btn btn-primary mt-1">Consultar</button>
-                    <label for="" class="subtitle">Codigo salida de bodega</label>
-                    <input type="number" name="codgoMateriaP">
                     <button class="btn btn-primary mt-1">Consultar</button>
             </form>
 
              <div class="d-flex align-items-center justify-content-between" style="grid-area: b;">
-                    <a href="/production/register" class="btn btn-primary">
+                    <a href="/inventary/warehouse-entrance/register" class="btn btn-primary">
                         Registrar
                     </a>
-                    <a href="/production/search" class="btn btn-primary">
+                    <a href="/inventary/warehouse-entrance/search" class="btn btn-primary">
                         Consultar
                     </a>
-                    <a href="/production/modify" class="btn btn-primary">
+                    <a href="/inventary/warehouse-entrance/modify" class="btn btn-primary">
                         Modificar
                     </a>
-                    <a href="/production/status" class="btn btn-primary">
+                    <a href="/inventary/warehouse-entrance/status" class="btn btn-primary">
                         Inhabilitar/Habilitar
                     </a>
             </div>

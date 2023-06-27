@@ -1,0 +1,52 @@
+<main class="mainProduction">
+    {{> navigation}}
+    <section class="appBody">
+            <section class="layout">
+                <article class="welcome p-3">  
+                    <h3 class="subtitle">Inventario</h3>            
+                    <h1 class="title">Orden de pedido</h1>
+                    <img src="/images/logosena.svg" alt="Logo Sena CDTI" class="imgWelcome">
+            </article>
+
+            <div style="grid-area: f;">
+            <article class="sec p-3">
+                <h3 class="title mb-3">Ordenes de pedido recientes</h3>
+                    <span class="d-flex align-items-center justify-content-between">
+                        <h3 class="subtitle">TM001</h3>
+                        <h3 class="subtitle">MP003</h3>
+                        <h3 class="subtitle">10</h3>
+                        <h3 class="subtitle">18/06/2023</h3>
+                    </span>
+                    <span class="d-flex align-items-center justify-content-between">
+                        <h3 class="subtitle">TM001</h3>
+                        <h3 class="subtitle">MP002</h3>
+                        <h3 class="subtitle">10</h3>
+                        <h3 class="subtitle">18/06/2023</h3>
+                    </span>
+                    <span class="d-flex align-items-center justify-content-between">
+                        <h3 class="subtitle">TM002</h3>
+                        <h3 class="subtitle">MP001</h3>
+                        <h3 class="subtitle">10</h3>
+                        <h3 class="subtitle">18/06/2023</h3>
+                    </span>
+            </article>
+            </div>
+            </section>
+            <div class="d-flex align-items-center justify-content-between" style="grid-area: b;">
+                    <a href="/inventary/purchase-order/register" class="btn btn-primary">
+                        Registrar
+                    </a>
+                    <a href="/inventary/purchase-order/search" class="btn btn-primary">
+                        Consultar
+                    </a>
+                    <a href="/inventary/purchase-order/modify" class="btn btn-primary">
+                        Modificar
+                    </a>
+                    <a href="/inventary/purchase-order/status" class="btn btn-primary">
+                        Inhabilitar/Habilitar
+                    </a>
+            </div>
+        {{> footer}}
+        </section>
+    
+</main>

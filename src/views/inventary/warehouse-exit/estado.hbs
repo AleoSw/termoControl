@@ -1,0 +1,37 @@
+<main class="mainProduction">
+    {{> navigation}}
+    <section class="appBody">
+        <section class="production">
+            <article class="welcome p-3">              
+                    <h3 class="subtitle">Inhabilitar/habilitar</h3>      
+                    <h1 class="title">Salida de bodega</h1>
+                    <img src="/images/logosena.svg" alt="Logo Sena CDTI" class="imgWelcome">
+            </article>
+
+            <form action="/inventary/warehouse-exit", style="grid-area: f;">
+                <div class="d-flex flex-column gap-2">
+                    <label for="" class="subtitle">Codigo salida de bodega</label>
+                    <input type="number" name="Codigo de tipo de material.">
+
+                    <button class="btn btn-primary">Inhabilitar</button>
+                    <button class="btn btn-primary">Habilitar</button>
+                </div>
+            </form>    
+        </section>    
+        <div class="d-flex align-items-center justify-content-between" style="grid-area: b;">
+                    <a href="/inventary/warehouse-exit/register" class="btn btn-primary">
+                        Registrar
+                    </a>
+                    <a href="/inventary/warehouse-exit/search" class="btn btn-primary">
+                        Consultar
+                    </a>
+                    <a href="/inventary/warehouse-exit/modify" class="btn btn-primary">
+                        Modificar
+                    </a>
+                    <a href="/inventary/warehouse-exit/status" class="btn btn-primary">
+                        Inhabilitar/Habilitar
+                    </a>
+            </div>
+        {{> footer}}
+    </section>
+</main>

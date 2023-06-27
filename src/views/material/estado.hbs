@@ -10,7 +10,11 @@
 
             <form action="/material" style="grid-area: f;" class="d-flex flex-column gap-2">
                     <label for="codigo-materia" class="subtitle">Código de Materia Prima:</label>
-                    <input type="text" id="codigo-materia" name="codigo-materia">
+                    <select class="selectForm">
+                        <option value="manometro">Manometro</option>
+                        <option value="base">Base</option>
+                        <option value="termómetro">Termómetro</option>
+                    </select>
                     <button class="btn btn-primary mt-1">Inhabilitar</button>
                     <button class="btn btn-primary mt-1">Habilitar</button>
             </form>

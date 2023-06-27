@@ -4,28 +4,82 @@
       <i class="ri-edit-circle-line logo"></i>
       <h1 class="title">Regístrate en <span>TermoControl</span></h1>
     </div>
-    <form class="formAuth" action="/dashboard">
+    <form class="formAuth" action="/auth/signup" method="POST">
+    <div class="mb-3">
+        <label class="mb-2" for="inputUser">
+          <i class="ri-user-3-line"></i>
+          <span>Tipo de documento de identidad *</span>
+        </label>
+        <select name="id_type" class="selectForm pt-2 pb-2">
+          <option value="1">Cedula de ciudadania</option>
+          <option value="2">Pasaporte</option>
+          <option value="3">Cedula de extranjeria</option>
+        </select>
+      </div>
       <div class="mb-3">
         <label class="mb-2" for="inputUser">
           <i class="ri-user-3-line"></i>
-          <span>Nombre de usuario</span>
+          <span>Documento de identidad *</span>
         </label>
-        <input class="inputAuth" type="text" id="inputUser" />
+        <input class="inputAuth" type="text" name="id" />
+      </div>
+      <div class="mb-3">
+        <label class="mb-2" for="inputUser">
+          <i class="ri-text"></i>
+          <span>Nombre(s) *</span>
+        </label>
+        <input class="inputAuth" type="text" name="names" />
+      </div>
+      <div class="mb-3">
+        <label class="mb-2" for="inputUser">
+          <i class="ri-text"></i>
+          <span>Apellido(s) *</span>
+        </label>
+        <input class="inputAuth" type="text" name="lastnames" />
       </div>
       <div class="mb-3">
         <label class="mb-2" for="inputUser">
           <i class="ri-mail-line"></i>
-          <span>Usuario o correo electronico</span>
+          <span>Correo electronico *</span>
         </label>
-        <input class="inputAuth" type="text" id="inputUser" />
+        <input class="inputAuth" type="text" name="email" />
+      </div>
+      <div class="mb-3">
+        <label class="mb-2 w-100" for="inputUser">
+          <i class="ri-lock-line"></i>
+          <div class="w-100 d-flex justify-content-between">
+            <span>Contraseña *</span>
+            <a href="">¿Olvidaste tu contraseña?</a>
+          </div>
+        </label>
+        <input class="inputAuth" type="password" name="password"/>
       </div>
       <div class="mb-3">
         <label class="mb-2" for="inputUser">
-          <i class="ri-lock-line"></i>
-          <span>Contraseña</span>
+          <i class="ri-cellphone-line"></i>
+          <span>Celular *</span>
         </label>
-        <input class="inputAuth" type="password" id="inputUser" />
+        <input class="inputAuth" type="text" name="phone" />
       </div>
+      <div class="mb-3">
+        <label class="mb-2" for="inputUser">
+          <i class="ri-links-line"></i>
+          <span>Direccion *</span>
+        </label>
+        <input class="inputAuth" type="text" name="address" />
+      </div>
+      <div class="mb-3">
+        <label class="mb-2" for="inputUser">
+          <i class="ri-user-3-line"></i>
+          <span>Rol *</span>
+        </label>
+        <select name="id_type" class="selectForm pt-2 pb-2">
+          <option value="1">Administrado</option>
+          <option value="2">Jefe de planta</option>
+          <option value="3">Operario</option>
+        </select>
+      </div>
+
       <button class="btnAuth" type="submit">Regístrate</button>
     </form>
 
@@ -38,4 +92,5 @@
       <h3 class="subtitle">©2023 - Servicio Nacional de Aprendizaje</h3>
     </section>
   </section>
+
 </main>
